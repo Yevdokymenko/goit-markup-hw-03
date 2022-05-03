@@ -1,0 +1,238 @@
+/* Головний псевдоклас для перемінних */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+  --hero-button-focus: #114977;
+}
+
+/* основний клас */
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--white-background-color);
+  color: var(--primary-text-color);
+}
+
+address {
+  font-style: normal;
+}
+
+/* прибираєм зайве в посилланнях та списку */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* Оформлення логотипу */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+/* Оформлення заголовків */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Ховаємо непотрібні заголовки screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Оформллення хедера */
+.logo-black {
+  color: var(--black-logo-color);
+}
+
+.header-nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-contact-link {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+/* Оформлення футера */
+.footer-contact-adress {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+
+.footer-contact-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus,
+.footer-contact-adress:hover,
+.footer-contact-adress:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--hero-background-color);
+}
+
+.logo-white {
+  color: var(--white-text-color);
+}
+
+/* ГОЛОВНА СТОРІНКА СТУДІЇ */
+
+/* Оформлення Героя */
+
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.hero-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-focus);
+  color: var(--white-text-color);
+}
+
+/* Блок інформації про принципи та політику Студії */
+.features-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/* Оформлення команди */
+.team-section {
+  background-color: var(--team-background-color);
+}
+
+.team-unit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
+.portfolio-filtr-button-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--team-background-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.portfolio-filtr-button-item:hover,
+.portfolio-filtr-button-item:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
