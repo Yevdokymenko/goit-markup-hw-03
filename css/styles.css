@@ -35,6 +35,8 @@ address {
 
 /* Оформлення логотипу */
 .logo {
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -66,16 +68,53 @@ address {
   overflow: hidden;
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-conteiner {
+  display: flex;
+}
+
 /* Оформллення хедера */
 .logo-black {
   color: var(--black-logo-color);
 }
 
+.header-nav {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.header-nav,
+.header-contact-list {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav-item {
+  margin-right: 50px;
+}
+
+.header-nav-item:last-child {
+  margin-right: 0px;
+}
+
+.header-nav-list {
+  display: flex;
 }
 
 .header-contact-link {
@@ -83,6 +122,18 @@ address {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+
+.header-contact-list {
+  margin-left: auto;
+}
+
+.header-contact-item {
+  margin-right: 50px;
+}
+
+.header-contact-item:last-child {
+  margin-right: 0px;
 }
 
 .header-nav-link:hover,
@@ -138,6 +189,7 @@ address {
 
 .hero {
   background-color: var(--hero-background-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -151,12 +203,12 @@ address {
 }
 
 .hero-button {
+  display: inline-block;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
