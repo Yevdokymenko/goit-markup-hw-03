@@ -9,7 +9,7 @@
   --white-background-color: #ffffff;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
-  --hero-button-focus: #114977;
+  --hero-button-focus: #1e7cc9;
 }
 
 /* основний клас */
@@ -61,6 +61,8 @@ img {
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Оформлення логотипу */
@@ -101,8 +103,9 @@ img {
 
 .container {
   width: 1200px;
-  margin-left: 215px;
-  margin-right: 215px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* Оформллення хедера */
@@ -316,6 +319,10 @@ img {
   margin-right: 30px;
 }
 
+.features-item:last-child {
+  margin-right: 0;
+}
+
 .features-text {
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -355,8 +362,8 @@ img {
   margin-right: 0;
 }
 
-.team-unit-photo {
-  margin-bottom: 30px;
+.team-unit-description {
+  padding: 30px;
 }
 
 .team-unit {
@@ -372,7 +379,6 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
 }
 
 /* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
@@ -418,15 +424,26 @@ img {
   flex-wrap: wrap;
 }
 
-.portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
-  border: 1px solid #eeeeee;
-}
-
 .portfolio-card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.portfolio-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  width: 370px;
+  height: 404px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-list-title {
